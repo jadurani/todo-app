@@ -1,2 +1,5 @@
-<input type="text" placeholder="Do something!" [(ngModel)]="todoModel">{{todoModel}}
-<button (click)="onClick()">Click Me</button>
+<div>
+    <form (submit)="onSubmit()">
+        <input type="text" name="input-todo-item" placeholder="Do something!" [(ngModel)]="todoModel">
+    </form>
+</div>

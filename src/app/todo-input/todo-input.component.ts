@@ -8,13 +8,13 @@ import { TodoService } from '../todo.service';
 })
 export class TodoInputComponent implements OnInit {
   todoModel;
-
+  
   constructor(public todoService:TodoService) {}
+  
+  ngOnInit() {}
 
-  onClick() {
+  onSubmit() {
     this.todoService.todos.push(this.todoModel);
     console.log(this.todoService.todos);
-  }
-
-  ngOnInit() {}
+  }  
 }
