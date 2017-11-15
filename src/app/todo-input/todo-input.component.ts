@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from '../todo.service';
+import { TodoModel } from '../todo.model';
 
 @Component({
   selector: 'todo-input',
@@ -7,7 +8,7 @@ import { TodoService } from '../todo.service';
   styleUrls: ['./todo-input.component.css'],
 })
 export class TodoInputComponent implements OnInit {
-  todoModel;
+  todoModel:TodoModel = new TodoModel();
   
   constructor(public todoService:TodoService) {}
   
@@ -16,5 +17,6 @@ export class TodoInputComponent implements OnInit {
   onSubmit() {
     this.todoService.todos.push(this.todoModel);
     console.log(this.todoService.todos);
+    this.todoModel = new TodoModel();
   }  
 }
