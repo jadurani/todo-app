@@ -5,7 +5,6 @@ import { TodoService } from '../todo.service';
   selector: 'todo-input',
   templateUrl: './todo-input.component.html',
   styleUrls: ['./todo-input.component.css'],
-  providers: [TodoService]
 })
 export class TodoInputComponent implements OnInit {
 
