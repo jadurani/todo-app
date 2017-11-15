@@ -7,12 +7,12 @@ import { TodoService } from '../todo.service';
   styleUrls: ['./todo-input.component.css'],
 })
 export class TodoInputComponent implements OnInit {
+  todoModel;
 
   constructor(public todoService:TodoService) {}
 
-  onClick(value) {
-    console.log(value);
-    this.todoService.todos.push(value);
+  onClick() {
+    this.todoService.todos.push(this.todoModel);
     console.log(this.todoService.todos);
   }
 

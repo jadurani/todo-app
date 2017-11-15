@@ -1,2 +1,2 @@
-<input #myInput type="text" placeholder="Do something!">
-<button (click)="onClick(myInput.value)">Click Me</button>
+<input type="text" placeholder="Do something!" [(ngModel)]="todoModel">{{todoModel}}
+<button (click)="onClick()">Click Me</button>
