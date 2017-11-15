@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TodoInputComponent } from './todo-input/todo-input.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoInputComponent
   ],
   imports: [
     BrowserModule
