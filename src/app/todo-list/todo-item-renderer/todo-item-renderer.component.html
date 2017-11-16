@@ -1,2 +1,2 @@
-<span [hidden]="todoItem.status == 'completed'">{{todoItem.title}}</span>
+<span [ngClass]="todoItem.status">{{todoItem.title}}</span>
 <button (click)="todoItem.toggle()">Togs</button>
